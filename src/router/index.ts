@@ -6,6 +6,7 @@ import {
   RouteRecordRaw,
 } from 'vue-router'
 import LayoutMain from '../components/layout/LayoutMain.vue'
+import CharacterDetails from '../views/CharacterDetails.vue'
 import Error from '../views/Error.vue'
 import Home from '../views/Home.vue'
 
@@ -15,6 +16,12 @@ const mainRoutes: RouteRecordRaw[] = [
     name: 'Home',
     props: true,
     component: Home,
+  },
+  {
+    path: '/character/:id',
+    name: 'CharacterDetails',
+    props: true,
+    component: CharacterDetails,
   },
 ]
 
